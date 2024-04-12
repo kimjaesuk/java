@@ -16,7 +16,6 @@ public class Application02 {
         System.out.println(1.23/1.23);
         System.out.println(1.23%1.0);
 
-
     }
 }
 
