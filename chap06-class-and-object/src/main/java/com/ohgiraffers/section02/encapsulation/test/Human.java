@@ -1,4 +1,4 @@
-package com.ogiraffers.section02.problem4;
+package com.ohgiraffers.section02.encapsulation.test;
 
 public class Human {
 

@@ -1,4 +1,4 @@
-package com.ogiraffers.section02.problem1;
+package com.ohgiraffers.section02.encapsulation.test;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.ogiraffers.section02.problem4;
+package com.ohgiraffers.section02.encapsulation.test;
 
 public class Book {
 
@@ -29,5 +29,5 @@ public class Book {
     public void setBookNo(int bookNo) {
         this.bookNo = bookNo;
     }
-
+}
 
