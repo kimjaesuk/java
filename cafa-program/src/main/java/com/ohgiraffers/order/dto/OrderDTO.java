@@ -5,6 +5,12 @@ public class OrderDTO {
     private int price;
     private int quantity;
 
+    public OrderDTO(String menuName, int price, int quantity) {
+        this.menuName = menuName;
+        this.price = quantity * price;
+        this.quantity = quantity;
+    }
+
     public String getMenuName() {
         return menuName;
     }
@@ -23,7 +29,6 @@ public class OrderDTO {
 
     public void setQuantity(int quantity, int price) {
         this.quantity = quantity;
-        this.price = quantity * price;
     }
 
     @Override
