@@ -46,8 +46,8 @@ public class Application {
                     System.out.println("삭제할 제품의 번호를 입력해주세요");
                     int no = Integer.parseInt(sc.nextLine());
                     result = no + "번 ";
-                    result += orderController.orderDelete(no);
-                    break;
+                        result += orderController.orderDelete(no);
+                        break;
 
                 case 3 : // 주문 수정
                     orderController.orderModify();
