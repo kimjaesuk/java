@@ -80,35 +80,26 @@ public class Application {
                     break;
 
                 case 5 :// 주문 전체조회
-                    System.out.print("조회할 주문의 개수를 입력해주세요: ");
-                    int readCount = sc.nextInt();
-                    sc.nextLine();
-                    for (int i = 0; i < readCount; i++) {
-                        System.out.print("조회할 주문 번호를 입력해주세요: ");
-                        int orderNumber = sc.nextInt();
-                        sc.nextLine();
-                        // orderRead 메서드는 주문 번호를 인자로 받아 해당 주문의 상세 내역을 반환하는 것으로 가정합니다.
-                        result += orderController.orderRead()+ "\n";
-                    }
+                    result = orderController.orderRead();
                     break;
-                    default:
+
+                default:
                     System.out.println("입력이 잘못되었습니다.");
                     break;
             }
 
-            result = orderController.orderRead();
             System.out.println(result);
 
             System.out.print("주문을 종료하시겠나요?");
             order = sc.nextBoolean();
-            System.out.print("주문종료 ==> " + order);
         }
 
-//            System.out.println(result);
-//
-//            System.out.print("주문을 종료하시겠나요?");
-//            order = sc.nextBoolean();
-//            System.out.print("주문종료 ==> " + order);
+        result = orderController.orderRead();
+        System.out.println(result);
+
+        System.out.print("주문을 종료하시겠나요?");
+        order = sc.nextBoolean();
+        System.out.print("주문종료 ==> " + order);
+        }
 
     }
-}
